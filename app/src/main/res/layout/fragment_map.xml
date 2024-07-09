@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MapFragment"
+    android:background="#FBF6E2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.otaliastudios.zoom.ZoomLayout
+            android:id="@+id/zoom_layout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/metro_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/metro" />
+        </com.otaliastudios.zoom.ZoomLayout>
+
+        <com.otaliastudios.zoom.ZoomLayout
+            android:id="@+id/ar_zoom_layout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/ar_metro_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/armetro" />
+        </com.otaliastudios.zoom.ZoomLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>
