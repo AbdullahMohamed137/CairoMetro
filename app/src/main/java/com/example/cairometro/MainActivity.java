@@ -1,8 +1,12 @@
 package com.example.cairometro;
 
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.style.BackgroundColorSpan;
+import android.util.ArraySet;
+import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,9 +23,15 @@ import com.example.cairometro.fragments.TicketFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.elevation.SurfaceColors;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +44,15 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
         replaceFragment(new HomeFragment());
         bottomNavigationView.setBackground(null);
         run();
+
+
     }
+
 
     public void run() {
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {

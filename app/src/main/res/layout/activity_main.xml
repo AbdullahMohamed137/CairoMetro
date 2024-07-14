@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#FBF6E2">
+    android:background="#FFFFFF">
 
     <FrameLayout
         android:id="@+id/frame_layout"
@@ -34,11 +34,11 @@
             android:id="@+id/bottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="20.80dp"
             android:background="@android:color/transparent"
             app:itemIconTint="#ECCEAE"
             app:itemTextColor="#ECCEAE"
-            android:padding="10dp"
+            android:paddingVertical="10dp"
+            android:layout_margin="0dp"
             app:labelVisibilityMode="selected"
             app:menu="@menu/bottom_nav_menu" />
 
